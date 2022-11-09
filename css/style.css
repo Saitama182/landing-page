@@ -1,34 +1,76 @@
-/* roboto-regular - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
 html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 body {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: normal;
-    color: #3F3B3D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
-.wrapper {
+
+.container {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+}
+
+.header_menu {
+margin-left: auto;
+}
+
+.header_menu-list {
+    display: flex;
+}
+
+.header_menu-item + .header_menu-item {
+    margin-left: 40px;
+}
+
+.header_menu-link {
+    font-size: 14px;
+    line-height: 19px;
+    color: #3F3B3D;
+    text-decoration: none;
+}
+
+.buy_nav {
+    display: flex;
+    margin-left: 20px;
+}
+
+.buy_nav-link {
+    font-size: 12px;
+    line-height: 16px;
+    color: #3F3B3D;
+    text-decoration: none;
+    padding: 14px 18px 12px 18px;
+    background: #DDDBDA;
+    border-radius: 3px;
+}
+
+.header_cart {
+    margin-left: 12px;
+    padding: 12px;
+    background: #F8F9FA;
+    border-radius: 3px;
+}
+
+
+.header_counter-link {
+    margin-left: 10px;
 }
